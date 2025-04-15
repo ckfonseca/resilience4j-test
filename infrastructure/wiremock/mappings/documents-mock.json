@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "urlPathPattern": "/documents/([A-Za-z0-9]+)"
+  },
+  "response": {
+    "status": 200,
+    "body": "[\n  {\n    \"id\": 1,\n    \"type\": \"RG\",\n    \"imageUrl\": \"http://localhost:8082/documents/{{request.path.[1]}}-rg.png\"\n  },\n  {\n    \"id\": 2,\n    \"type\": \"CPF\",\n    \"imageUrl\": \"http://localhost:8082/documents/{{request.path.[1]}}-cpf.png\"\n  },\n  {\n    \"id\": 3,\n    \"type\": \"Carteira de Trabalho\",\n    \"imageUrl\": \"http://localhost:8082/documents/{{request.path.[1]}}-carteira_trabalho.png\"\n  },\n  {\n    \"id\": 4,\n    \"type\": \"PIS\",\n    \"imageUrl\": \"http://localhost:8082/documents/{{request.path.[1]}}-pis.png\"\n  }\n]",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
