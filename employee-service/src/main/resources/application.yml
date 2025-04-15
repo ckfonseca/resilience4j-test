@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: employee-service
+  data:
+    mongodb:
+      uri: mongodb://app_user:123456@localhost:27017/employee-db?authSource=admin
+  profiles:
+    active: local
+server:
+  port: 8081
+client:
+  documents:
+    url: http://localhost:8082
